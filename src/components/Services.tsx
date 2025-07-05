@@ -77,7 +77,7 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
-            <div 
+            <div
               key={index}
               className="bg-gray-800/50 rounded-xl p-8 hover:bg-gray-800/70 transition-all duration-300 hover:scale-[1.02]"
             >
@@ -116,7 +116,23 @@ const Services = () => {
                 </div>
               </div>
 
-              <button className="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105">
+              <button
+                onClick={() => {
+                  // Scroll to contact section for service inquiries
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  // You can also add a small delay and show a toast notification
+                  setTimeout(() => {
+                    // Optional: Add a custom message based on the service
+                    const messages = {
+                      'Web Development': 'Ready to discuss your web development project!',
+                      'Software Development': 'Let\'s talk about your software development needs!',
+                      'Programming Tutoring': 'Interested in programming tutoring? Let\'s connect!'
+                    };
+                    // You can implement a toast notification here if needed
+                  }, 500);
+                }}
+                className="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105 transform active:scale-95"
+              >
                 Get Started
               </button>
             </div>
@@ -128,7 +144,7 @@ const Services = () => {
           <h3 className="text-2xl font-bold text-center mb-8">
             Why Choose <span className="text-cyan-400">Me?</span>
           </h3>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {whyChooseMe.map((reason, index) => (
               <div key={index} className="text-center">
@@ -148,18 +164,18 @@ const Services = () => {
             Ready to bring your ideas to life?
           </h3>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            Whether you need a web application, custom software solution, or programming guidance, 
+            Whether you need a web application, custom software solution, or programming guidance,
             I'm here to help you achieve your goals with cutting-edge technology and proven expertise.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
+            <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105"
             >
               Start Your Project
             </button>
-            <button 
+            <button
               onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-lg font-semibold hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300"
             >

@@ -31,7 +31,7 @@ const Contact = () => {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'Connect with me',
-      href: 'https://linkedin.com/in/gnaneshwar-r-a9aa5228b'
+      href: 'https://www.linkedin.com/in/gnaneshwar-r-a9aa5228b'
     },
     {
       icon: Github,

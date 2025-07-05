@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 const Hero = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/Gnani-25', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/gnaneshwar-r-a9aa5228b', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/gnaneshwar-r-a9aa5228b', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:rasmalgnaneshwar001@gmail.com', label: 'Email' },
     { icon: Phone, href: 'tel:+919347560270', label: 'Phone' },
   ];
