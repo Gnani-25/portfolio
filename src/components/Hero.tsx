@@ -11,12 +11,12 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/20 to-gray-900 animate-gradient"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/20 to-gray-900"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Profile Image */}
-          <div className="flex-shrink-0 animate-bounce-in">
+          <div className="flex-shrink-0">
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 p-1">
                 <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
@@ -33,19 +33,19 @@ const Hero = () => {
 
           {/* Hero Content */}
           <div className="flex-1 text-center lg:text-left">
-            <div className="animate-slide-up">
-              <p className="text-cyan-400 text-lg mb-2 animate-fade-in">Hello, I'm</p>
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 animate-slide-in-left">
+            <div className="animate-fade-in">
+              <p className="text-cyan-400 text-lg mb-2">Hello, I'm</p>
+              <h1 className="text-5xl lg:text-7xl font-bold mb-4">
                 Rasmal
                 <br />
-                <span className="text-gradient">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
                   Gnaneshwar
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-6 animate-slide-in-right">
+              <p className="text-xl lg:text-2xl text-gray-300 mb-6">
                 Passionate Programming Enthusiast & Aspiring Software Developer
               </p>
-              <p className="text-base sm:text-lg text-gray-400 mb-8 max-w-2xl animate-fade-in">
+              <p className="text-lg text-gray-400 mb-8 max-w-2xl">
                 B.Tech CSE Student at Vardhaman College of Engineering with a stellar 9.65 CGPA.
                 Currently advancing the field through research at IIT Ropar while mastering
                 cutting-edge technologies and solving complex algorithmic challenges.

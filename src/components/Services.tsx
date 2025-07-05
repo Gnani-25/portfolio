@@ -75,12 +75,11 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16">
+        <div className="grid lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-800/50 glass-effect rounded-xl p-6 lg:p-8 hover:bg-gray-800/70 transition-all duration-300 hover:scale-[1.02] hover-lift"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              className="bg-gray-800/50 rounded-xl p-8 hover:bg-gray-800/70 transition-all duration-300 hover:scale-[1.02]"
             >
               <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center mb-6">
                 <service.icon size={32} className="text-white" />
