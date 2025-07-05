@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and profe
 
 ## 🌟 Live Demo
 
-**Website**: [https://gnani-25.github.io/portfolioo](https://gnani-25.github.io/portfolioo)
+**Website**: [https://gnani-25.github.io/portfolio](https://gnani-25.github.io/portfolio)
 
 ## 🚀 Features
 
@@ -72,8 +72,8 @@ portfolioo/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Gnani-25/portfolioo.git
-   cd portfolioo
+   git clone https://github.com/Gnani-25/portfolio.git
+   cd portfolio
    ```
 
 2. **Install dependencies**
