@@ -41,20 +41,20 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
-      <div className="container mx-auto px-6 py-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-gray-800/50">
+      <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-cyan-400">
+          <div className="text-xl sm:text-2xl font-bold text-gradient">
             Rasmal<span className="text-white">.</span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6 lg:space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`transition-colors duration-300 hover:text-cyan-400 ${activeSection === item.id ? 'text-cyan-400' : 'text-gray-300'
+                className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${activeSection === item.id ? 'text-cyan-400 font-semibold' : 'text-gray-300'
                   }`}
               >
                 {item.label}
@@ -73,13 +73,14 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4">
-            {navItems.map((item) => (
+          <div className="md:hidden mt-4 pb-4 animate-slide-up">
+            {navItems.map((item, index) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`block w-full text-left py-2 transition-colors duration-300 hover:text-cyan-400 ${activeSection === item.id ? 'text-cyan-400' : 'text-gray-300'
+                className={`block w-full text-left py-3 px-4 transition-all duration-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-lg ${activeSection === item.id ? 'text-cyan-400 font-semibold bg-gray-800/30' : 'text-gray-300'
                   }`}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {item.label}
               </button>

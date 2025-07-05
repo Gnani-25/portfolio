@@ -6,6 +6,7 @@ import Skills from '@/components/Skills';
 import Services from '@/components/Services';
 import Contact from '@/components/Contact';
 import Navigation from '@/components/Navigation';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <Skills />
       <Services />
       <Contact />
+      <ScrollToTop />
     </div>
   );
 };
