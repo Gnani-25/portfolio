@@ -1,73 +1,182 @@
-# Welcome to your Lovable project
+# Rasmal Gnaneshwar - Portfolio Website
 
-## Project info
+A modern, responsive portfolio website showcasing my skills, projects, and professional journey as a Computer Science Engineering student and aspiring software developer.
 
-**URL**: https://lovable.dev/projects/c8743171-0cd9-48d2-87e8-cc946d210479
+## 🌟 Live Demo
 
-## How can I edit this code?
+**Website**: [https://gnani-25.github.io/portfolioo](https://gnani-25.github.io/portfolioo)
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- **Modern Design**: Clean, professional design with dark theme and cyan accents
+- **Responsive Layout**: Fully responsive design that works on all devices
+- **Smooth Animations**: Beautiful transitions and hover effects
+- **Contact Form**: Functional contact form with EmailJS integration
+- **Interactive Navigation**: Smooth scrolling navigation with active section highlighting
+- **Portfolio Showcase**: Detailed project presentations with technologies and highlights
+- **Skills Visualization**: Interactive skill bars and progress indicators
+- **Professional Sections**: About, Skills, Services, Portfolio, and Contact sections
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c8743171-0cd9-48d2-87e8-cc946d210479) and start prompting.
+## 🛠️ Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+### Frontend
+- **React 18** - Modern React with hooks and functional components
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Beautiful, accessible UI components
+- **Lucide React** - Modern icon library
 
-**Use your preferred IDE**
+### Backend & Services
+- **EmailJS** - Contact form email service
+- **React Router** - Client-side routing
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Development Tools
+- **ESLint** - Code linting and formatting
+- **PostCSS** - CSS processing
+- **GitHub Pages** - Deployment platform
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📁 Project Structure
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+portfolioo/
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # React components
+│   │   ├── ui/            # shadcn/ui components
+│   │   ├── About.tsx      # About section
+│   │   ├── Contact.tsx    # Contact form
+│   │   ├── Hero.tsx       # Hero section
+│   │   ├── Navigation.tsx # Navigation bar
+│   │   ├── Portfolio.tsx  # Portfolio projects
+│   │   ├── Services.tsx   # Services offered
+│   │   └── Skills.tsx     # Skills showcase
+│   ├── pages/             # Page components
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility functions
+│   ├── App.tsx            # Main app component
+│   └── main.tsx           # App entry point
+├── package.json           # Dependencies and scripts
+├── vite.config.ts         # Vite configuration
+└── tailwind.config.ts     # Tailwind CSS configuration
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+- Node.js (v16 or higher)
+- npm or yarn
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Installation
 
-## What technologies are used for this project?
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Gnani-25/portfolioo.git
+   cd portfolioo
+   ```
 
-This project is built with:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-## How can I deploy this project?
+4. **Open your browser**
+   Navigate to `http://localhost:8080` (or the port shown in terminal)
 
-Simply open [Lovable](https://lovable.dev/projects/c8743171-0cd9-48d2-87e8-cc946d210479) and click on Share -> Publish.
+### Available Scripts
 
-## Can I connect a custom domain to my Lovable project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run deploy` - Deploy to GitHub Pages
 
-Yes, you can!
+## 📧 Contact Form Setup
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The contact form uses EmailJS for sending emails. To set up:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. Create an account at [EmailJS](https://www.emailjs.com/)
+2. Add an email service (Gmail, Outlook, etc.)
+3. Create an email template
+4. Update the configuration in `src/components/Contact.tsx`:
+   ```typescript
+   const serviceId = 'YOUR_SERVICE_ID';
+   const templateId = 'YOUR_TEMPLATE_ID';
+   const publicKey = 'YOUR_PUBLIC_KEY';
+   ```
+
+## 🎨 Customization
+
+### Colors and Theme
+- Primary colors are defined in `tailwind.config.ts`
+- Main accent color: Cyan (#06b6d4)
+- Secondary accent: Blue (#3b82f6)
+
+### Content Updates
+- **Personal Info**: Update `src/components/Hero.tsx` and `src/components/About.tsx`
+- **Projects**: Modify `src/components/Portfolio.tsx`
+- **Skills**: Edit `src/components/Skills.tsx`
+- **Services**: Update `src/components/Services.tsx`
+- **Contact Info**: Change `src/components/Contact.tsx`
+
+## 📱 Responsive Design
+
+The website is fully responsive with breakpoints:
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+## 🚀 Deployment
+
+### GitHub Pages (Current)
+```bash
+npm run deploy
+```
+
+### Other Platforms
+- **Vercel**: Connect your GitHub repository
+- **Netlify**: Drag and drop the `dist` folder
+- **Firebase**: Use Firebase Hosting
+
+## 📊 Performance
+
+- **Lighthouse Score**: 90+ (Performance, Accessibility, Best Practices, SEO)
+- **Bundle Size**: Optimized with Vite
+- **Loading Speed**: Fast initial load with lazy loading
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 About Me
+
+**Rasmal Gnaneshwar**
+- B.Tech CSE Student at Vardhaman College of Engineering (CGPA: 9.65)
+- Research Intern at IIT Ropar
+- Passionate about programming and software development
+- Skills: Python, Machine Learning, MERN Stack, TypeScript, C++
+
+## 📞 Contact
+
+- **Email**: rasmalgnaneshwar001@gmail.com
+- **LinkedIn**: [gnaneshwar-r-a9aa5228b](https://linkedin.com/in/gnaneshwar-r-a9aa5228b)
+- **GitHub**: [Gnani-25](https://github.com/Gnani-25)
+- **Phone**: +91 9347560270
+
+---
+
+⭐ **Star this repository if you found it helpful!**
