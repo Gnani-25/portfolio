@@ -79,7 +79,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-800/50 rounded-xl p-8 hover:bg-gray-800/70 transition-all duration-300 hover:scale-[1.02]"
+              className="bg-gray-800/50 rounded-xl p-8 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 hover-glow-cyan"
             >
               <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center mb-6">
                 <service.icon size={32} className="text-white" />
@@ -120,18 +120,9 @@ const Services = () => {
                 onClick={() => {
                   // Scroll to contact section for service inquiries
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                  // You can also add a small delay and show a toast notification
-                  setTimeout(() => {
-                    // Optional: Add a custom message based on the service
-                    const messages = {
-                      'Web Development': 'Ready to discuss your web development project!',
-                      'Software Development': 'Let\'s talk about your software development needs!',
-                      'Programming Tutoring': 'Interested in programming tutoring? Let\'s connect!'
-                    };
-                    // You can implement a toast notification here if needed
-                  }, 500);
+                  setTimeout(() => { }, 500);
                 }}
-                className="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105 transform active:scale-95"
+                className="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105 hover-glow-cyan"
               >
                 Get Started
               </button>
@@ -171,13 +162,13 @@ const Services = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105"
+              className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105 hover-glow-cyan"
             >
               Start Your Project
             </button>
             <button
               onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-lg font-semibold hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300"
+              className="px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-lg font-semibold hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300 hover:scale-105 hover-glow-cyan"
             >
               View My Work
             </button>
