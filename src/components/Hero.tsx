@@ -21,7 +21,7 @@ const Hero = () => {
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 p-1">
                 <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
                   <img
-                    src="/my_img.jpg"
+                    src="/portfolio/my_img.jpg"
                     alt="Rasmal Gnaneshwar"
                     className="w-full h-full rounded-full object-cover"
                   />
