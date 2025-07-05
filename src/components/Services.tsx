@@ -132,7 +132,7 @@ const Services = () => {
                     // You can implement a toast notification here if needed
                   }, 500);
                 }}
-                className="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105 transform active:scale-95 hover-lift border-gradient"
+                className="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105 transform active:scale-95"
               >
                 Get Started
               </button>

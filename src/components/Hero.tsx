@@ -18,7 +18,7 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="flex-shrink-0 animate-bounce-in">
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 p-1 hover-lift">
+              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 p-1">
                 <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
                   <img
                     src="/portfolio/my_img.jpg"
@@ -27,8 +27,7 @@ const Hero = () => {
                   />
                 </div>
               </div>
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full blur opacity-30 animate-pulse-slow"></div>
-              <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 rounded-full blur-xl animate-float"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full blur opacity-30 animate-pulse"></div>
             </div>
           </div>
 
@@ -53,18 +52,17 @@ const Hero = () => {
               </p>
 
               {/* Social Links */}
-              <div className="flex justify-center lg:justify-start space-x-4 sm:space-x-6 mb-8">
+              <div className="flex justify-center lg:justify-start space-x-6 mb-8">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-800/50 glass-effect rounded-full flex items-center justify-center hover:bg-cyan-600 hover:scale-110 transition-all duration-300 hover-lift"
+                    className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-cyan-600 transition-all duration-300 hover:scale-110"
                     aria-label={social.label}
-                    style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <social.icon size={20} className="sm:w-6 sm:h-6" />
+                    <social.icon size={24} />
                   </a>
                 ))}
               </div>
@@ -73,13 +71,13 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <button
                   onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 sm:px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105 hover-lift border-gradient"
+                  className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105"
                 >
                   View My Work
                 </button>
                 <button
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 sm:px-8 py-3 border-2 border-cyan-400 rounded-full font-semibold hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300 hover-lift"
+                  className="px-8 py-3 border-2 border-cyan-400 rounded-full font-semibold hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300"
                 >
                   Get In Touch
                 </button>
