@@ -67,7 +67,7 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            My <span className="text-cyan-400">Services</span>
+            Professional <span className="text-cyan-400">Excellence</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Leveraging my technical expertise to deliver exceptional solutions and educational experiences
